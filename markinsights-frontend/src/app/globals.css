@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }}
+  body {
+    @apply bg-background text-foreground;
+::-webkit-scrollbar {
+  width: 3px;
+}}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #494949;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6b6b6b;
+  border-radius: 6px;
+}
+
+/* Handle on active/dragging */
+::-webkit-scrollbar-thumb:active {
+  background-color: #6b6b6b;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+
+/* Corner */
+::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}
+body {
+  color: #000000;
+  background: #ffffff;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px #000; /* WebKit browsers (Safari, Chrome) */
+  color: white; /* Set the text color */
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.search_input {
+  @apply block w-4/12 max-md:w-7/12 max-sm:w-8/12 rounded-md border border-gray-200 bg-white py-2.5 pl-5 pr-12 text-sm shadow-lg font-medium focus:border-black focus:outline-none focus:ring-0;
+}
+.ball{
+  z-index: -1;
+  filter: blur(100px);
+
+}
+.text-grad{
+  /* text gradient from webkit */
+  background: linear-gradient(269deg, #29005C 29.96%, #6611D2 93.86%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.nutricon{
+   /* text gradient from webkit */
+   background: linear-gradient(269deg, #00575C 29.96%, #00cfda 93.86%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+}
+.blueball{
+  z-index: -10;
+  filter: blur(100px);
+}
+.greenball{
+  z-index: -10;
+  filter: blur(100px);
+}
+.redball{
+  z-index: -10;
+  filter: blur(100px);
+}
+.container{
+  z-index: -100;
+}
+
+.greentext{
+  background: linear-gradient(269deg, #5C0000 29.96%, #D21111 93.86%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.yellowtext{
+  background: linear-gradient(269deg, #615a00 29.96%, #d6a400 93.86%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.redtext{
+  background: linear-gradient(269deg, hsl(0, 100%, 19%) 29.96%, #d60000 93.86%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}

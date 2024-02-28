@@ -1,0 +1,16 @@
+flask
+matplotlib
+requests
+numpy 
+pandas
+joblib
+scikit-learn==1.2.2
+flask_cors
+python_dotenv
+bs4
+openai
+langchain
+langchain_community
+serp
+serpapi
+google-search-results
